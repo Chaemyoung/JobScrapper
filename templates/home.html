@@ -3,12 +3,64 @@
     <head>
         <title>Job Search</title>
     </head>
-    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            position: relative;
+        }
+        
+
+        body h1 {
+            font-size: 3rem;
+            font-weight: normal;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        #searchBox {
+            float: right;
+            right: 40%;
+            position: relative;
+            margin-top: 2%;
+        }
+
+        body input[type=text] {
+            padding: 6px;
+            border: 1px solid;
+            border-color: black;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;display: inline-block;            
+        }
+
+        button {
+            font-size: 1rem;
+            background-color: #e7e7e7; /* Green */
+            border-radius: 12px;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+        
+    </style>
     <body>
         <h1>Job Search</h1>
         <form action="/report" method="get">
-            <input placeholder='Search for a job' required name="word" />
-            <button>Search</button>
+            <section id="searchBox">
+                <input type = "text" placeholder='Search for a job' required name="word" />
+                <button>Search</button>
+            </section>
         </form>
     </body>
 </html>
