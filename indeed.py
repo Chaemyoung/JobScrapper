@@ -39,7 +39,7 @@ def extrat_job(html):
             'title': title, 
             'company': company, 
             'location': location, 
-            "link": f"https://ca.indeed.com/jobs?jk={job_id}"
+            "apply_link": f"https://ca.indeed.com/viewjob?jk={job_id}&from=web&vjs=3"
         }
 
 def extract_jobs(last_page, url):
